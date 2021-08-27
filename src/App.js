@@ -42,6 +42,7 @@ function App() {
   };
 
   const equals = (e) => {
+  
     if (e?.target.innerText === "=") {
       setTotal(true);
     }
@@ -108,14 +109,15 @@ function App() {
         <div className='btn light-gray' onClick={reset}>
           AC
         </div>
-        <div className='btn light-gray' onClick={percent}>
-          %
-        </div>
         <div className='btn light-gray' onClick={minusPlus}>
           +/-
         </div>
-        <div className='btn orange' onClick={operatorType}>
-          /
+        <div className='btn light-gray'  onClick={percent}>
+          %
+        </div>
+        
+        <div className='btn orange'style={{fontSize:'50px'}} onClick={operatorType}>
+        /
         </div>
         <div className='btn' onClick={inputNum}>
           7
@@ -138,8 +140,8 @@ function App() {
         <div className='btn' onClick={inputNum}>
           6
         </div>
-        <div className='btn orange' onClick={operatorType}>
-          +
+        <div className='btn orange'style={{fontSize:'50px'}} onClick={operatorType}>
+          -
         </div>
         <div className='btn' onClick={inputNum}>
           1
@@ -150,8 +152,8 @@ function App() {
         <div className='btn' onClick={inputNum}>
           3
         </div>
-        <div className='btn orange' onClick={operatorType}>
-          -
+        <div className='btn orange'style={{fontSize:'50px'}} onClick={operatorType}>
+          +
         </div>
         <div className='btn zero' onClick={inputNum}>
           0
