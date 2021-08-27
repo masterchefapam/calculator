@@ -22,6 +22,8 @@ function App() {
     setTotal(false);
   };
 
+ 
+
   useEffect(() => {
     setInput(curState);
   }, [curState]);
@@ -29,6 +31,8 @@ function App() {
   useEffect(() => {
     setInput("0");
   }, []);
+
+
   const operatorType = (e) => {
     setTotal(false);
     setOperator(e.target.innerText);
@@ -40,6 +44,8 @@ function App() {
       setCurState("");
     }
   };
+
+ 
 
   const equals = (e) => {
   
@@ -116,8 +122,9 @@ function App() {
           %
         </div>
         
-        <div className='btn orange'style={{fontSize:'50px'}} onClick={operatorType}>
-        /
+        <div className='btn orange' style={{fontSize:'50px'}}
+         onClick={operatorType}>
+       /
         </div>
         <div className='btn' onClick={inputNum}>
           7
